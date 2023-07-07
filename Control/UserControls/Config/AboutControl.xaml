@@ -14,14 +14,14 @@
     <UserControl.Resources>
         <cvt:UpdateTypeConvert x:Key="UpdateTypeConvert"/>
     </UserControl.Resources>
+
     <Grid MouseDown="DragMove">
         <hc:SimplePanel Margin="20,50,20,20" >
             <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top">
                 <Image Source="/Resource/Image/About.png"
                        Width="400"
                        Height="100"
-                       xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeInAndContract}, Delay=250}"
-                       />
+                       xf:Animations.Primary="{xf:Animate BasedOn={StaticResource FadeInAndContract}, Delay=250}"/>
                 <TextBlock x:Name="AppInfo"  TextAlignment="Center"  Text="Copyright ©  2021 GeekDesk V"/>
                 <hc:UniformSpacingPanel Spacing="5" HorizontalAlignment="Center" Margin="10,10,0,0" VerticalAlignment="Center">
                     <hc:Shield Subject=".net" Status=">=4.72" Margin="0,0,10,0" Color="#1182c3"/>
@@ -52,7 +52,7 @@
                                 <hc:Poptip.Content>
                                     <Image x:Name="PublicWeChat" Width="150" Height="150" />
                                 </hc:Poptip.Content>
-                                
+
                             </hc:Poptip>
                         </hc:Poptip.Instance>
                     </hc:Shield>
@@ -89,6 +89,6 @@
             </StackPanel>
         </hc:SimplePanel>
     </Grid>
-    
-    
+
+
 </UserControl>

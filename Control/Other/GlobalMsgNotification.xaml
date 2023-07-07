@@ -9,15 +9,22 @@
         Width="320"
         Height="400">
     <Border.Background>
-        <SolidColorBrush Color="AliceBlue" Opacity="0.96"/>
+        <SolidColorBrush Color="AliceBlue"
+                         Opacity="0.96" />
     </Border.Background>
     <Grid>
-
         <StackPanel>
-            <Image Source="/Resource/Image/BacklogImg.png" Width="260" Margin="0,20,0,0"/>
-            <hc:Card Width="260" Height="220" BorderThickness="0" Effect="{DynamicResource EffectShadow2}" Margin="0,20,0,0">
-            
-            <Border CornerRadius="4,4,0,0" Height="160" Padding="10,0,10,0">
+            <Image Source="/Resource/Image/BacklogImg.png"
+                   Width="260"
+                   Margin="0,20,0,0" />
+            <hc:Card Width="260"
+                     Height="220"
+                     BorderThickness="0"
+                     Effect="{DynamicResource EffectShadow2}"
+                     Margin="0,20,0,0">
+                <Border CornerRadius="4,4,0,0"
+                        Height="160"
+                        Padding="10,0,10,0">
                     <ScrollViewer>
                         <TextBlock TextOptions.TextFormattingMode="Display"
                                    TextOptions.TextHintingMode="Animated"
@@ -28,12 +35,12 @@
                                    LineHeight="22"
                                    VerticalAlignment="Center"
                                    HorizontalAlignment="Center"
-                                   Text="{Binding Msg}"/>
+                                   Text="{Binding Message}" />
                     </ScrollViewer>
-            </Border>
-            
-            
-            <!--<hc:Card.Footer>
+                </Border>
+
+
+                <!--<hc:Card.Footer>
                 <StackPanel Margin="10" Width="160">
             
                     <TextBlock TextWrapping="NoWrap" FontSize="20"  Style="{DynamicResource TextBlockLargeBold}" TextTrimming="CharacterEllipsis" 
@@ -46,9 +53,14 @@
                                        HorizontalAlignment="Left"/>
                 </StackPanel>
             </hc:Card.Footer>-->
-        </hc:Card>
+            </hc:Card>
         </StackPanel>
 
-        <Button Style="{StaticResource MyBtnStyle}" Click="Close_Click" Content="朕已阅" Margin="10,0,10,20" Width="298" VerticalAlignment="Bottom"/>
+        <Button Style="{StaticResource MyBtnStyle}"
+                Click="Close_Click"
+                Content="朕已阅"
+                Margin="10,0,10,20"
+                Width="298"
+                VerticalAlignment="Bottom" />
     </Grid>
 </Border>

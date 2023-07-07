@@ -6,7 +6,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              d1p1:Ignorable="d" 
              xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006">
-  <Application.Resources>
+    <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/GeekDesk;component/Resource/Dictionary/Geometry.xaml"/>
@@ -17,5 +17,5 @@
                 <ResourceDictionary Source="/GeekDesk;component/Resource/Dictionary/XamlFlairSettings.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-  </Application.Resources>
+    </Application.Resources>
 </Application>
